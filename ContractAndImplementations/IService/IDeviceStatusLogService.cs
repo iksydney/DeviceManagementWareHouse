@@ -11,7 +11,7 @@ namespace ContractAndImplementations.IService
     {
         Task<IEnumerable<DeviceStatusLogViewModel>> GetAllDevices();
         Task<DeviceStatusLogViewModel> GetDeviceByID(int id);
-        Task<DeviceViewItemModel> CreateDevice(DeviceViewModel model, string userName);
+        Task<StatusViewItemModel> CreateDeviceLog(DeviceStatusLogViewModel model, string userName);
         Task DeleteDevice(int id);
         Task UpdateDevice(int Id, DeviceStatusLogViewModel model);
         Task<DeviceStatusLogViewModel> GetDeviceStatusLogByIdAsync(int DeviceStatusLogId, bool trackChanges);

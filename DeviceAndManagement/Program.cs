@@ -12,6 +12,10 @@ builder.Services.ConfigureSqlContext(builder.Configuration);
 
 builder.Services.AddControllers();
 builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Device Management API", Version = "v1" });
+});
 
 var app = builder.Build();
 
@@ -19,6 +23,11 @@ var app = builder.Build();
 
 app.UseHttpsRedirection();
 app.UseCors("CorsPolicy");
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Device Management API");
+});
 
 app.UseAuthorization();
 

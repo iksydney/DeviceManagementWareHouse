@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DeviceAndManagement.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20221107103423_init")]
+    [Migration("20221107134744_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -67,11 +67,11 @@ namespace DeviceAndManagement.Migrations
 
             modelBuilder.Entity("Entities.DeviceStatusLog", b =>
                 {
-                    b.Property<int>("StatusId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StatusId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
@@ -82,9 +82,6 @@ namespace DeviceAndManagement.Migrations
 
                     b.Property<DateTime?>("DateUpdate")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("DeviceCategory")
-                        .HasColumnType("int");
 
                     b.Property<int>("DeviceCondition")
                         .HasColumnType("int");
@@ -100,7 +97,7 @@ namespace DeviceAndManagement.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("StatusId");
+                    b.HasKey("Id");
 
                     b.HasIndex("DeviceId");
 

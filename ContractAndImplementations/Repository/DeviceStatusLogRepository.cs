@@ -19,8 +19,7 @@ namespace ContractAndImplementations.Repository
         public void DeleteDeviceStatusLog(DeviceStatusLog model) => Delete(model);
 
         public async Task<IEnumerable<DeviceStatusLog>> GetAllDeviceStatusLogsAsync(bool trackChanges) =>
-            await FindAll(trackChanges)
-            .OrderBy(x => x.StatusId).ToListAsync();
+            await FindAll(trackChanges).ToListAsync();
 
         public async Task<IEnumerable<DeviceStatusLog>> GetDeviceByFaultyAsync(string Faulty, bool trackChanges) =>
             await FindAll(trackChanges)
@@ -35,7 +34,7 @@ namespace ContractAndImplementations.Repository
             .Where(x => x.DeviceCondition.Equals(3)).ToListAsync();
 
         public async Task<DeviceStatusLog> GetDeviceStatusLogByIdAsync(int DeviceStatusLogId, bool trackChanges) =>
-            await FindByCondition(c => c.StatusId.Equals(DeviceStatusLogId), trackChanges).SingleOrDefaultAsync();
+            await FindByCondition(c => c.Id.Equals(DeviceStatusLogId), trackChanges).SingleOrDefaultAsync();
 
     }
 }

@@ -12,13 +12,12 @@ namespace Entities
     public class DeviceStatusLog
     {
         [Key]
-        public int StatusId { get; set; }
+        public int Id { get; set; }
         [ForeignKey("Device")]
         public int DeviceId { get; set; }
         public Device Device { get; set; }
         public string Temperature { get; set; }
         public DeviceCondition DeviceCondition { get; set; }
-        public DeviceCategory DeviceCategory { get; set; }
         public string CreatedBy { get; set; }
         public string UpdatedBy { get; set; }
         public DateTime DateCreated { get; set; } = DateTime.Now;

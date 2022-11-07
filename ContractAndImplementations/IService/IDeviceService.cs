@@ -9,7 +9,7 @@ namespace ContractAndImplementations.IService
 {
     public interface IDeviceService
     {
-        Task<IEnumerable<DeviceViewModel>> GetAllDevices();
+        Task<IEnumerable<DeviceViewItemModel>> GetAllDevices();
         Task<DeviceViewModel> GetDeviceByID(int id);
         Task<DeviceViewItemModel> CreateDevice(DeviceViewModel model, string userName);
         Task DeleteDevice(int id);

@@ -25,6 +25,7 @@ namespace ContractAndImplementations.Service
             var device = _map.Map<Device>(model);
             _repo.DeviceRepository.CreateDevice(device);
             device.CreatedBy = userName;
+            device.UpdatedBy = userName;
             await _repo.SaveAsync();
             return _map.Map<DeviceViewItemModel>(device);
         }
@@ -40,10 +41,10 @@ namespace ContractAndImplementations.Service
             await _repo.SaveAsync();
         }
 
-        public async Task<IEnumerable<DeviceViewModel>> GetAllDevices()
+        public async Task<IEnumerable<DeviceViewItemModel>> GetAllDevices()
         {
             var devices = await _repo.DeviceRepository.GetAllDevicesAsync(true);
-            return _map.Map<IEnumerable<DeviceViewModel>>(devices);
+            return _map.Map<IEnumerable<DeviceViewItemModel>>(devices);
         }
 
         public async Task<DeviceViewModel> GetDeviceByID(int id)

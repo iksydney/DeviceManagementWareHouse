@@ -14,8 +14,8 @@ namespace Shared.DTO
         public string Temperature { get; set; }
         public DeviceCondition DeviceCondition { get; set; }
         public DeviceCategory DeviceCategory { get; set; }
-        public string CreatedBy { get; set; }
-        public string UpdatedBy { get; set; }
+        /*public string CreatedBy { get; set; }
+        public string UpdatedBy { get; set; }*/
 
     }
     public class StatusViewItemModel

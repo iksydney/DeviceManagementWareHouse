@@ -20,13 +20,14 @@ namespace ContractAndImplementations.Service
             _repo = repo;
             _map = map;
         }
-        public async Task<DeviceViewItemModel> CreateDevice(DeviceViewModel model, string userName)
+        public async Task<StatusViewItemModel> CreateDeviceLog(DeviceStatusLogViewModel model, string userName)
         {
             var logCreation = _map.Map<DeviceStatusLog>(model);
             _repo.DeviceStatusLogRepository.CreateDeviceStatusLog(logCreation);
             logCreation.CreatedBy = userName;
+            logCreation.UpdatedBy = userName;
             await _repo.SaveAsync();
-            return _map.Map<DeviceViewItemModel>(model);
+            return _map.Map<StatusViewItemModel>(model);
         }
 
         public async Task DeleteDevice(int id)
