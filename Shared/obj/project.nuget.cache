@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gdi/LMVYyU5nTP686MLdTRssc/nu/Stg9hEdaZTiBPbOKrENZMOOy/rD5KyxWDsjcO9gaRPvtJ8u2Kk6ClOhzw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\BanklyFinal\\Shared\\Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

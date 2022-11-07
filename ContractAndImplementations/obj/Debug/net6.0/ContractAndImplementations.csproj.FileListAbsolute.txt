@@ -1,0 +1,17 @@
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\obj\Debug\net6.0\ContractAndImplementations.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\obj\Debug\net6.0\ContractAndImplementations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\obj\Debug\net6.0\ContractAndImplementations.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\obj\Debug\net6.0\ContractAndImplementations.AssemblyInfo.cs
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\obj\Debug\net6.0\ContractAndImplementations.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\bin\Debug\net6.0\ContractAndImplementations.deps.json
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\bin\Debug\net6.0\ContractAndImplementations.dll
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\bin\Debug\net6.0\ref\ContractAndImplementations.dll
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\bin\Debug\net6.0\ContractAndImplementations.pdb
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\bin\Debug\net6.0\Entities.dll
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\bin\Debug\net6.0\Shared.dll
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\bin\Debug\net6.0\Entities.pdb
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\bin\Debug\net6.0\Shared.pdb
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\obj\Debug\net6.0\ContractAndImplementations.csproj.CopyComplete
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\obj\Debug\net6.0\ContractAndImplementations.dll
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\obj\Debug\net6.0\ref\ContractAndImplementations.dll
+C:\Users\Admin\Desktop\BanklyFinal\ContractAndImplementations\obj\Debug\net6.0\ContractAndImplementations.pdb
