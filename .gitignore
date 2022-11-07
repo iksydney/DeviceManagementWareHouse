@@ -1,3 +1,2 @@
-/Migrations
-Migrations/
+Migrations/*
 *.json
